@@ -124,3 +124,51 @@
 	);
 --========================================================================================================================
 --========================================================================================================================
+
+
+
+
+
+
+
+--========================================================================================================================	
+-- Egypt
+-- Add new tradition usable in exploration and modern (after playing egypt in antiquity) for +2 prod to navigable rivers
+--========================================================================================================================
+	INSERT INTO Types
+		(Type,					Kind)
+	VALUES	('NODE_CIVIC_AQ_EGYPT_NILE_LEGACY',	'KIND_TREE_NODE');
+
+	INSERT INTO TYPEQUOTES
+		(Type,					Quote,					QuoteAuthor,					QuoteAudio)
+	VALUES	('NODE_CIVIC_AQ_EGYPT_NILE_LEGACY',	'LOC_CIVIC_AQ_EGYPT_NILE_LEGACY_QUOTE',	'LOC_CIVIC_AQ_EGYPT_NILE_LEGACY_QUOTE_AUTHOR',	'');
+	
+--	INSERT INTO ProgressionTreeNodes
+--		(ProgressionTreeNodeType,		ProgressionTree,	Cost,	Name,					IconString)
+--	VALUES	('NODE_CIVIC_AQ_EGYPT_NILE_LEGACY',	'TREE_CIVICS_AQ_EGYPT',	'9999',	'NODE_CIVIC_AQ_EGYPT_NILE_LEGACY_NAME',	'cult_egypt');
+	
+--	INSERT INTO ProgressionTreeNodeUnlocks
+--		(ProgressionTreeNodeType,		TargetKind,		TargetType,			UnlockDepth)
+--	VALUES	('NODE_CIVIC_AQ_EGYPT_NILE_LEGACY',	'KIND_TRADITION',	'TRADITION_NILE_LEGACY',	'1');
+	
+	INSERT INTO Types
+		(Type,				Kind)
+	VALUES	('TRADITION_NILE_LEGACY',	'KIND_TRADITION');
+
+	INSERT INTO TRADITIONS
+		(TraditionType,			Name,			Description,			TraitType,	AgeType)
+	VALUES	('TRADITION_NILE_LEGACY',	'LOC_NILE_LEGACY_NAME',	'LOC_NILE_LEGACY_DESCRIPTION',	'TRAIT_EGYPT',	'AGE_ANTIQUITY');
+
+	INSERT INTO TraditionModifiers
+		(TraditionType,			ModifierId)
+	VALUES	('TRADITION_NILE_LEGACY',	'NILE_LEGACY_MOD_PROD_BBG');
+
+	INSERT INTO ModifierStrings
+		(ModifierId,			Context,	Text)
+	VALUES	('NILE_LEGACY_MOD_PROD_BBG',	'Description',	'LOC_TRADITION_NILE_LEGACY_DESCRIPTION');
+
+	INSERT INTO Warehouse_YieldChanges
+		(ID,						Age,			YieldType,		YieldChange,	NavigableRiverInCity)
+	VALUES	('EgyptNileLegacyNavigableRiverProduction',	'AGE_ANTIQUITY',	'YIELD_PRODUCTION',	'2',		'TRUE');
+--========================================================================================================================
+--========================================================================================================================

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameEffects xmlns="GameEffects">
+	<!-- New BBG Egypt Legacy Tradition -->
+	<Modifier id="NILE_LEGACY_MOD_PROD_BBG" collection="COLLECTION_PLAYER_CITIES" effect="EFFECT_CITY_GRANT_WAREHOUSE_YIELD">
+		<Argument name="WarehouseYieldChange">EgyptNileLegacyNavigableRiverProduction</Argument>
+		<Argument name="Tooltip">LOC_TRADITION_NILE_LEGACY_DESCRIPTION</Argument>
+	</Modifier>
+</GameEffects>
+
+<!--
+<Database>
+	<Types>
+		<Row Type="TRADITION_NILE_LEGACY" Kind="KIND_TRADITION"/>
+	</Types>
+	<Traditions>
+		<Row TraditionType="TRADITION_NILE_LEGACY" Name="LOC_TRADITION_NILE_LEGACY_NAME" Description="LOC_TRADITION_NILE_LEGACY_DESCRIPTION" TraitType="TRAIT_EGYPT" AgeType="AGE_ANTIQUITY"/>
+	</Traditions>
+	<TraditionModifiers>
+		<Row TraditionType="TRADITION_NILE_LEGACY" ModifierId="NILE_LEGACY_MOD_PROD_BBG"/>
+	</TraditionModifiers>
+	<Warehouse_YieldChanges>
+		<Row ID="EgyptNileLegacyNavigableRiverProduction" Age="AGE_ANTIQUITY" YieldType="YIELD_PRODUCTION" YieldChange="2" NavigableRiverInCity="true"/>
+	</Warehouse_YieldChanges>
+</Database>
+-->
