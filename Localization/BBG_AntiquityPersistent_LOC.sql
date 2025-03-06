@@ -132,3 +132,29 @@
     WHERE Tag = 'LOC_MEMENTO_BATTUTA_MERCHANTS_SADDLE_FUNCTIONAL_DESCRIPTION';
 --========================================================================================================================
 --========================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+--========================================================================================================================	
+-- Egypt
+-- Add new tradition usable in exploration and modern (after playing egypt in antiquity) for +2 prod to navigable rivers
+--========================================================================================================================
+	INSERT OR REPLACE INTO LocalizedText
+		(Tag,				Language,	Text)
+	VALUES	('LOC_NILE_LEGACY_DESCRIPTION', 'en_US',	'+2[icon:YIELD_PRODUCTION] Production on Navigable Rivers.');
+
+	INSERT OR REPLACE INTO LocalizedText
+		(Tag,				Language,	Text)
+	VALUES	('LOC_NILE_LEGACY_NAME',	'en_US',	'Nile Legacy');
+--========================================================================================================================
+--========================================================================================================================
