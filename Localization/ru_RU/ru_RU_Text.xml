@@ -232,6 +232,36 @@
 			<Text>+5 к [icon:YIELD_CULTURE] культуре за каждый город-государство, сюзереном которого вы являетесь.</Text>
 		</Replace>
 		<!--========================================================================================================================	
+		Карфаген
+		=======================================================================================================================-->
+		<Replace Tag="LOC_TRADITION_GAULOS_DESCRIPTION" Language="ru_RU">
+			<Text>+100% к [icon:YIELD_GOLD] золоту для покупки зданий на берегах или на судоходных реках.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRADITION_QUINQUEREME_DESCRIPTION" Language="ru_RU">
+			<Text>+100% [icon:YIELD_GOLD] золота при покупке морских юнитов. -1 к [icon:YIELD_GOLD] золоту на содержание морских юнитов.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRADITION_SUFFETES_DESCRIPTION" Language="ru_RU">
+			<Text>+100% к [icon:YIELD_GOLD] золоту от шахтерских городков. +20% к [icon:YIELD_FOOD] пище от рыбацких или фермерских городков.</Text>
+		</Replace>
+		<!--========================================================================================================================	
+		Рим
+		=======================================================================================================================-->
+		<Replace Tag="LOC_ABILITY_LEGION_DESCRIPTION" Language="ru_RU">
+			<Text>Боевая мощь за каждую традицию в правительстве: +{2_Amount}</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LEGION_PREVIEW" Language="ru_RU">
+			<Text>Традиции: +{2_Amount}</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_LEGION_BASE_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный римский пехотный юнит. +2 к боевой мощи за каждую традицию в правительстве.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_LEGION_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный римский пехотный юнит 2 уровня. +2 к боевой мощи за каждую традицию в правительстве.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_LEGION_2_DESCRIPTION" Language="ru_RU">
+			<Text>Уникальный римский пехотный юнит 3 уровня. +2 к боевой мощи за каждую традицию в правительстве.</Text>
+		</Replace>		
+		<!--========================================================================================================================	
 		Mementos
 		=======================================================================================================================-->
 		<Replace Tag="LOC_MEMENTO_FOUNDATION_LYDIAN_LION_FUNCTIONAL_DESCRIPTION" Language="ru_RU">
@@ -242,6 +272,9 @@
 		</Replace>
 		<Replace Tag="LOC_MEMENTO_FOUNDATION_SHISA_NECKLACE_FUNCTIONAL_DESCRIPTION" Language="ru_RU">
 			<Text>Получите 50[icon:YIELD_DIPLOMACY] влияния, когда становитесь сюзереном города-государства.</Text>
+		</Replace>
+		<Replace Tag="LOC_MEMENTO_TECUMSEH_WARCLUB_FUNCTIONAL_DESCRIPTION" Language="ru_RU">
+			<Text>+0.5 к боевой мощи всех юнитов за каждый город-государство, сюзереном которого вы являетесь.</Text>
 		</Replace>
 		<!--========================================================================================================================	
 		Изменение традиций
